@@ -12,7 +12,7 @@
 body {
    display: grid;
    height: 100vh;
-   grid-template: 1fr 4fr / 1fr 4fr;
+   grid-template: minmax(8rem, 1fr) 4fr / minmax(12rem, 1fr) 4fr;
 }
 
 nav {
