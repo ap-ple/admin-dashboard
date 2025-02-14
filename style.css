@@ -33,7 +33,7 @@ body>nav>nav {
    display: grid;
 }
 
-body>nav>h1,
+body>nav>header,
 body>nav>nav>a {
    color: white;
    display: grid;
