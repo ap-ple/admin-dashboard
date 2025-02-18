@@ -126,8 +126,8 @@ body>header>.user_info>.notifications {
 body>header>.user_info>.profile-picture {
    height: 2rem;
    aspect-ratio: 1 / 1;
-   background: var(--theme-yellow);
    border-radius: 100%;
+   background: var(--theme-yellow);
 }
 
 body>header>.user_info>.profile-name {
