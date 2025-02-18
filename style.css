@@ -51,6 +51,11 @@ body>nav>nav>a {
    font-weight: bold;
 }
 
+body>nav>nav>a:focus-visible {
+   outline: 2px solid white;
+   border-radius: 0.5rem;
+}
+
 body>nav>nav>a>img {
    padding: 0 0.5rem;
 }
@@ -95,7 +100,7 @@ body>header>.user_info {
    align-items: center;
    justify-content: end;
    grid-template-columns: repeat(3, 0fr);
-   gap: 1.5rem;
+   gap: 1.25rem;
 }
 
 body>header>.user_info>button {
@@ -109,8 +114,9 @@ body>header>.user_info>button:hover {
 }
 
 body>header>.user_info>.notifications {
-   height: 1.25rem;
+   height: 1.75rem;
    aspect-ratio: 1 / 1;
+   padding: 0.25rem;
 }
 
 /* body>header>.user_info>.notifications>img:hover {
