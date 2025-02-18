@@ -84,11 +84,50 @@ body>header>.search_bar>input {
    background: var(--theme-gray);
    padding: 0 0.75rem;
    height: 1.5rem;
-   width: 100%;
 }
 
 body>header>.search_bar>input:focus {
    outline: 2px solid gray;
+}
+
+body>header>.user_info {
+   display: grid;
+   align-items: center;
+   justify-content: end;
+   grid-template-columns: repeat(3, 0fr);
+   gap: 1.5rem;
+}
+
+body>header>.user_info>button {
+   display: grid;
+   background: none;
+   border: none;
+}
+
+body>header>.user_info>button:hover {
+   cursor: pointer;
+}
+
+body>header>.user_info>.notifications {
+   height: 1.25rem;
+   aspect-ratio: 1 / 1;
+}
+
+/* body>header>.user_info>.notifications>img:hover {
+   content: url("icons/header/notifications.svg");
+} */
+
+body>header>.user_info>.profile-picture {
+   height: 2rem;
+   aspect-ratio: 1 / 1;
+   background: var(--theme-yellow);
+   border-radius: 100%;
+}
+
+body>header>.user_info>.profile-name {
+   font-size: 80%;
+   white-space: nowrap;
+   font-weight: bold;
 }
 
 body>main {
