@@ -6,6 +6,9 @@
 }
 
 :root {
+   --theme-gray: #e2e8f0;
+   --theme-blue: #1992d4;
+   --theme-yellow: #efb52e;
    font-size: 120%;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -17,7 +20,7 @@ body {
 }
 
 body>nav {
-   background: #1992d4;
+   background: var(--theme-blue);
    grid-row: 1 / -1;
    padding: 1rem;
    display: grid;
@@ -58,10 +61,38 @@ body>nav>nav>a:hover {
 
 body>header {
    grid-column: 2;
+   display: grid;
+   grid-template: 1fr 2fr / 5fr 3fr;
+   gap: 1rem;
+   padding: 1rem 2rem;
+}
+
+body>header>.search_bar {
+   display: grid;
+   grid-template-columns: 1.25rem 1fr;
+   gap: 1rem;
+   align-items: center;
+}
+
+body>header>.search_bar>label {
+   display: grid;
+}
+
+body>header>.search_bar>input {
+   border-radius: 1rem;
+   border: none;
+   background: var(--theme-gray);
+   padding: 0 0.75rem;
+   height: 1.5rem;
+   width: 100%;
+}
+
+body>header>.search_bar>input:focus {
+   outline: 2px solid gray;
 }
 
 body>main {
-   background: #e2e8f0;
+   background: var(--theme-gray);
    box-shadow: inset black 0 1rem 1rem -1.5rem;
    grid-area: 2 / 2;
 }
