@@ -145,6 +145,11 @@ body>header>.greeting {
    display: grid;
    grid-template-columns: 0fr 1fr;
    gap: 1rem;
+   align-items: center;
+}
+
+body>header>.greeting>.profile-picture {
+   height: 4rem;
 }
 
 body>header>.greeting>.message {
