@@ -160,6 +160,24 @@ body>header>.greeting>.message>.profile-name {
    font-size: 1.1rem;
 }
 
+body>header>.actions {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   align-items: center;
+   justify-items: center;
+}
+
+body>header>.actions>button {
+   background: var(--theme-blue);
+   color: white;
+   font-weight: bold;
+   font-size: 0.8rem;
+   border-radius: 2rem;
+   width: 5rem;
+   height: 2rem;
+}
+
 body>main {
    background: var(--theme-gray);
    box-shadow: inset black 0 1rem 1rem -1.5rem;
