@@ -124,9 +124,9 @@ body>header>.user_info>.notifications {
    padding: 0.25rem;
 }
 
-body>header>.user_info>.notifications:hover>img {
+/* body>header>.user_info>.notifications:hover>img {
    content: url("icons/header/notifications.svg");
-}
+} */
 
 body>header>.user_info>.profile-picture {
    height: 2rem;
