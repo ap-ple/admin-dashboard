@@ -117,7 +117,8 @@ body>header>.user_info>.notifications {
    padding: 0.25rem;
 }
 
-body>header>.user_info>.notifications:hover>img {
+body>header>.user_info>.notifications:hover>img,
+body>header>.user_info>.notifications:focus-visible>img {
    content: url("icons/header/notifications.svg");
 }
 
