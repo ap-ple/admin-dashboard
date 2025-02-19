@@ -127,11 +127,11 @@ body>header>.user_info>.notifications:focus-visible>img {
    content: url("icons/header/notifications.svg");
 }
 
-body>header>.user_info>button.profile-picture {
+body>header>.user_info>.profile-picture {
    height: 2rem;
 }
 
-body>header>.user_info>button.profile-name {
+body>header>.user_info>.profile-name {
    font-size: 0.9rem;
    padding: 0.25rem;
    white-space: nowrap;
