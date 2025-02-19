@@ -210,13 +210,13 @@ body>main>section>h2 {
 }
 
 body>main>section>.card,
-body>main>.projects>.cards>* {
+body>main>.projects>.cards>div {
    --card-shadow: black 0.1rem 0.1rem 0.8rem -0.5rem;
    background: white;
    border-radius: 0.5rem;
    box-shadow: var(--card-shadow);
 }
 
-body>main>.projects>.cards>* {
+body>main>.projects>.cards>div {
    box-shadow: var(--card-shadow), inset var(--theme-yellow) 3rem 0 0 -2.5rem;
 }
