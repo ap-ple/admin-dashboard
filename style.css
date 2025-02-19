@@ -163,10 +163,10 @@ body>header>.greeting>.message>.profile-name {
 
 body>header>.actions {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(3, 0fr);
    gap: 1rem;
    align-items: center;
-   justify-items: center;
+   justify-content: end;
 }
 
 body>header>.actions>button {
