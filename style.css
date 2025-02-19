@@ -10,7 +10,6 @@
    --theme-gray: #e2e8f0;
    --theme-blue: #1992d4;
    --theme-yellow: #efb52e;
-   font-size: 120%;
 }
 
 a {
@@ -36,7 +35,7 @@ button:hover {
 body {
    min-height: 100vh;
    display: grid;
-   grid-template: minmax(8.5rem, 1fr) 4fr / minmax(15rem, 1fr) 4fr;
+   grid-template: 10rem 4fr / 15rem 4fr;
 }
 
 body>nav {
