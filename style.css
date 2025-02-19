@@ -63,7 +63,6 @@ body>nav>nav>a:hover {
 }
 
 body>header {
-   grid-column: 2;
    display: grid;
    grid-template: 1fr 2fr / 5fr 3fr;
    gap: 1rem;
@@ -139,5 +138,4 @@ body>header>.user_info>.profile-name {
 body>main {
    background: var(--theme-gray);
    box-shadow: inset black 0 1rem 1rem -1.5rem;
-   grid-area: 2 / 2;
 }
