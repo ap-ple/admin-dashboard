@@ -15,6 +15,15 @@
    font-size: 120%;
 }
 
+a {
+   text-decoration: none;
+   color: black;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
 button:hover {
    cursor: pointer;
 }
@@ -57,7 +66,6 @@ body>nav>nav>a {
 
 body>nav>nav>a {
    padding: 0.5rem 0;
-   text-decoration: none;
    font-weight: bold;
 }
 
@@ -68,10 +76,6 @@ body>nav>nav>a:focus-visible {
 
 body>nav>nav>a>img {
    padding: 0 0.5rem;
-}
-
-body>nav>nav>a:hover {
-   text-decoration: underline;
 }
 
 body>header {
