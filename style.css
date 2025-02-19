@@ -3,6 +3,8 @@
 * {
    margin: 0;
    padding: 0;
+   background: none;
+   border: none;
 }
 
 :root {
@@ -15,6 +17,12 @@
 
 button:hover {
    cursor: pointer;
+}
+
+.profile-picture {
+   aspect-ratio: 1 / 1;
+   border-radius: 100%;
+   background: var(--theme-yellow);
 }
 
 body {
@@ -69,7 +77,7 @@ body>nav>nav>a:hover {
 body>header {
    display: grid;
    grid-template: 1fr 2fr / 5fr 3fr;
-   gap: 1rem;
+   gap: 1.5rem;
    padding: 1rem 2rem;
 }
 
@@ -106,8 +114,6 @@ body>header>.user_info {
 
 body>header>.user_info>button {
    display: grid;
-   background: none;
-   border: none;
 }
 
 body>header>.user_info>.notifications {
@@ -121,18 +127,37 @@ body>header>.user_info>.notifications:focus-visible>img {
    content: url("icons/header/notifications.svg");
 }
 
-body>header>.user_info>.profile-picture {
+body>header>.user_info>button.profile-picture {
    height: 2rem;
-   aspect-ratio: 1 / 1;
-   border-radius: 100%;
-   background: var(--theme-yellow);
 }
 
-body>header>.user_info>.profile-name {
-   font-size: 80%;
+body>header>.user_info>button.profile-name {
+   font-size: 0.9rem;
    padding: 0.25rem;
    white-space: nowrap;
    font-weight: bold;
+}
+
+body>header>.greeting {
+   display: grid;
+   grid-template-columns: 0fr 1fr;
+   gap: 1rem;
+}
+
+body>header>.greeting>.message {
+   display: grid;
+   grid-template-rows: 0fr 0fr;
+   align-content: center;
+   gap: 0.5rem;
+   font-weight: bold;
+}
+
+body>header>.greeting>.message>.welcome {
+   font-size: 0.6rem;
+}
+
+body>header>.greeting>.message>.profile-name {
+   font-size: 1.1rem;
 }
 
 body>main {
