@@ -212,7 +212,8 @@ body>main>section .card {
    border-radius: 0.5rem;
 }
 
-body>main>section .card p {
+body>main>section p,
+body>main>section .trending-project {
    color: #696969;
 }
 
@@ -272,5 +273,23 @@ body>main>.announcements>.card>.announcement>h3 {
 }
 
 body>main>.announcements>.card>.announcement>p {
-   font-size: 0.6rem;
+   font-size: 0.7rem;
+}
+
+body>main>.trending>.card {
+   display: grid;
+   padding: 1.5rem 1rem;
+   font-size: 0.8rem;
+   gap: 2rem;
+}
+
+body>main>.trending>.card>.user {
+   display: grid;
+   grid-template: repeat(2, 1fr) / 2rem 1fr;
+   gap: 0 1rem;
+   align-items: center;
+}
+
+body>main>.trending>.card>.user>.profile-picture {
+   grid-row: 1 / -1;
 }
