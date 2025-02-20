@@ -23,11 +23,8 @@ a.current-page {
 }
 
 button:hover {
-   cursor: pointer;
-}
-
-button:hover {
    opacity: 75%;
+   cursor: pointer;
 }
 
 button:active {
