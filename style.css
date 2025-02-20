@@ -27,7 +27,11 @@ button:hover {
 }
 
 button:hover>img {
-   filter: drop-shadow(0 0 1px black);
+   filter: opacity(75%);
+}
+
+button:active>img {
+   filter: opacity(50%);
 }
 
 .profile-picture {
@@ -247,10 +251,6 @@ body>main>section>.cards>.card>.project-actions {
    gap: 1rem;
    justify-content: end;
    padding-right: 1rem;
-}
-
-body>main>section>.cards>.card>.project-actions>button {
-   width: 1.5rem;
 }
 
 body>main>section>.cards>.card>.project-actions>button {
