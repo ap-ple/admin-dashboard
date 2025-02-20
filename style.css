@@ -253,3 +253,24 @@ body>main>.projects>.cards>.card>.project-actions {
 body>main>.projects>.cards>.card>.project-actions>button {
    width: 1.5rem;
 }
+
+body>main>.announcements>.card {
+   display: grid;
+   padding: 0.5rem 1.5rem;
+}
+
+body>main>.announcements>.card>.announcement {
+   padding: 1rem 0;
+}
+
+body>main>.announcements>.card>.announcement+.announcement {
+   border-top: solid lightgray 1px;
+}
+
+body>main>.announcements>.card>.announcement>h3 {
+   font-size: 0.8rem;
+}
+
+body>main>.announcements>.card>.announcement>p {
+   font-size: 0.6rem;
+}
