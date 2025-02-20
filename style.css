@@ -154,7 +154,7 @@ body>header>.greeting>.profile-picture {
 
 body>header>.greeting>.message {
    display: grid;
-   grid-template-rows: 0fr 0fr;
+   grid-template-rows: repeat(2, 0fr);
    align-content: center;
    gap: 0.5rem;
    font-weight: bold;
