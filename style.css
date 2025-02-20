@@ -125,10 +125,6 @@ body>header>.user_info>.notifications {
    padding: 0.25rem;
 }
 
-/* body>header>.user_info>.notifications:hover>img {
-   content: url("icons/header/notifications.svg");
-} */
-
 body>header>.user_info>.profile-picture {
    height: 2rem;
 }
@@ -214,14 +210,45 @@ body>main>section>h2 {
    font-size: 1.1rem;
 }
 
-body>main>section>.card,
-body>main>.projects>.cards>div {
+body>main>section .card {
    --card-shadow: black 0.1rem 0.1rem 0.8rem -0.5rem;
+   box-shadow: var(--card-shadow);
    background: white;
    border-radius: 0.5rem;
-   box-shadow: var(--card-shadow);
 }
 
-body>main>.projects>.cards>div {
+body>main>section .card p {
+   color: #696969;
+}
+
+body>main>.projects>.cards>.card {
    box-shadow: var(--card-shadow), inset var(--theme-yellow) 3rem 0 0 -2.5rem;
+   padding: 1rem 0.5rem 1rem 1.5rem;
+   display: grid;
+   grid-template-rows: 1fr 0fr;
+   gap: 0.5rem;
+}
+
+body>main>.projects>.cards>.card>.description>h3 {
+   font-size: 0.9rem;
+}
+
+body>main>.projects>.cards>.card>.description>p {
+   font-size: 0.8rem;
+}
+
+body>main>section>.cards>.card>.project-actions {
+   display: grid;
+   grid-template-columns: repeat(3, 0fr);
+   gap: 1rem;
+   justify-content: end;
+   padding-right: 1rem;
+}
+
+body>main>section>.cards>.card>.project-actions>button {
+   width: 1.5rem;
+}
+
+body>main>section>.cards>.card>.project-actions>button {
+   width: 1.5rem;
 }
