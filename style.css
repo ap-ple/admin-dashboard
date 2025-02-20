@@ -26,12 +26,12 @@ button:hover {
    cursor: pointer;
 }
 
-button:hover>img {
-   filter: opacity(75%);
+button:hover {
+   opacity: 75%;
 }
 
-button:active>img {
-   filter: opacity(50%);
+button:active {
+   opacity: 50%;
 }
 
 .profile-picture {
