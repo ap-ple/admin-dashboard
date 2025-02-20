@@ -60,22 +60,21 @@ body>nav>nav {
    display: grid;
 }
 
-body>nav>header>a,
-body>nav>nav>a {
+body>nav a {
    color: white;
    display: grid;
    grid-template-columns: 0fr 1fr;
    gap: 1rem;
 }
 
+body>nav a:focus-visible {
+   outline: 0.1rem solid white;
+   border-radius: 0.5rem;
+}
+
 body>nav>nav>a {
    padding: 0.5rem 0;
    font-weight: bold;
-}
-
-body>nav>nav>a:focus-visible {
-   outline: 2px solid white;
-   border-radius: 0.5rem;
 }
 
 body>nav>nav>a>img {
@@ -102,6 +101,7 @@ body>header>.search_bar>label {
 
 body>header>.search_bar>input {
    border-radius: 1rem;
+   font-size: 0.75rem;
    border: none;
    background: var(--theme-gray);
    padding: 0 0.75rem;
@@ -109,7 +109,7 @@ body>header>.search_bar>input {
 }
 
 body>header>.search_bar>input:focus {
-   outline: 2px solid gray;
+   outline: 0.1rem solid gray;
 }
 
 body>header>.user_info {
@@ -264,7 +264,7 @@ body>main>.announcements>.card>.announcement {
 }
 
 body>main>.announcements>.card>.announcement+.announcement {
-   border-top: solid lightgray 1px;
+   border-top: solid lightgray 0.05rem;
 }
 
 body>main>.announcements>.card>.announcement>h3 {
