@@ -201,16 +201,6 @@ body>main>section {
    gap: 1rem;
 }
 
-body>main>.projects {
-   grid-row: 1 / -1;
-}
-
-body>main>.projects>.cards {
-   display: grid;
-   gap: 1rem;
-   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-}
-
 body>main>section>h2 {
    font-size: 1.1rem;
 }
@@ -224,6 +214,16 @@ body>main>section .card {
 
 body>main>section .card p {
    color: #696969;
+}
+
+body>main>.projects {
+   grid-row: 1 / -1;
+}
+
+body>main>.projects>.cards {
+   display: grid;
+   gap: 1rem;
+   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
 }
 
 body>main>.projects>.cards>.card {
@@ -242,7 +242,7 @@ body>main>.projects>.cards>.card>.description>p {
    font-size: 0.8rem;
 }
 
-body>main>section>.cards>.card>.project-actions {
+body>main>.projects>.cards>.card>.project-actions {
    display: grid;
    grid-template-columns: repeat(3, 0fr);
    gap: 1rem;
@@ -250,6 +250,6 @@ body>main>section>.cards>.card>.project-actions {
    padding-right: 1rem;
 }
 
-body>main>section>.cards>.card>.project-actions>button {
+body>main>.projects>.cards>.card>.project-actions>button {
    width: 1.5rem;
 }
