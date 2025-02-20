@@ -285,7 +285,7 @@ body>main>.trending>.card {
 
 body>main>.trending>.card>.user {
    display: grid;
-   grid-template: repeat(2, 1fr) / 2rem 1fr;
+   grid-template: repeat(2, 0fr) / 2rem 1fr;
    gap: 0 1rem;
    align-items: center;
 }
